@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tech Club is a student club that learns web development together.">
+  <title>Tech Club | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <a href="index.html" id="logo-link"><img src="images/logo.png" alt="Tech Club logo" width="80" height="80"></a>
+    <div id="site-title">
+      <p id="site-name">Tech Club</p>
+      <p id="tagline">Learn. Build. Share.</p>
+    </div>
+    <nav id="main-nav" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero">
+      <h1>Welcome to Tech Club</h1>
+      <p class="lead">We are a student club that learns web development together. No experience needed.</p>
+      <img src="images/hero.jpg" alt="Tech Club banner with a code symbol" width="1200" height="500">
+      <p>
+        <a href="contact.html" class="btn btn-primary">Join the club</a>
+        <a href="about.html" class="btn btn-secondary">Learn more</a>
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>What we do</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Learn</h3>
+          <p>Short workshops on HTML, CSS and JavaScript, with practice after every lesson.</p>
+        </article>
+        <article class="card">
+          <h3>Build</h3>
+          <p>Every member builds a real website and publishes it online.</p>
+        </article>
+        <article class="card">
+          <h3>Share</h3>
+          <p>We present our projects to the school and give each other feedback.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>Latest news</h2>
+      <article class="card">
+        <h3>New workshop: Your first website</h3>
+        <p><time datetime="2026-12-01">1 December 2026</time></p>
+        <p>Join our beginner workshop and build your first page in two hours. <a href="schedule.html">See the timetable</a>.</p>
+      </article>
+      <article class="card">
+        <h3>Project day photos are online</h3>
+        <p><time datetime="2026-11-20">20 November 2026</time></p>
+        <p>Look at the best moments from our last project day in the <a href="gallery.html">gallery</a>.</p>
+      </article>
+    </section>
+
+    <section id="playground">
+      <h2>Try it</h2>
+      <!-- JS hooks: #like-btn, #like-count, #toggle-btn, #info-text, #theme-btn -->
+      <p>Likes: <span id="like-count">0</span></p>
+      <p>
+        <button type="button" id="like-btn">Like</button>
+        <button type="button" id="toggle-btn">Show / hide info</button>
+        <button type="button" id="theme-btn">Switch theme</button>
+      </p>
+      <p id="info-text">Tech Club meets three times a week in the computer lab.</p>
+    </section>
+
+    <section id="links">
+      <h2>Useful links</h2>
+      <ul id="link-list">
+        <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+        <li><a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer">freeCodeCamp</a></li>
+        <li><a href="#features">Jump to: What we do</a></li>
+        <li><a href="mailto:club@example.com">Email the club</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 Tech Club. A practice website for HTML, CSS and JavaScript.</p>
+    <p><a href="contact.html">Contact us</a> | <a href="#site-header">Back to top</a></p>
+    <address>
+      Tech Club, Computer Lab, Room 12<br>
+      <a href="mailto:club@example.com">club@example.com</a> |
+      <a href="tel:+201000000000">+20 100 000 0000</a>
+    </address>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

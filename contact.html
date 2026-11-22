@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register to join Tech Club.">
+  <title>Tech Club | Join us</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <a href="index.html" id="logo-link"><img src="images/logo.png" alt="Tech Club logo" width="80" height="80"></a>
+    <div id="site-title">
+      <p id="site-name">Tech Club</p>
+      <p id="tagline">Learn. Build. Share.</p>
+    </div>
+    <nav id="main-nav" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Join Tech Club</h1>
+    <p>Fill in the form below. Fields marked with * are required.</p>
+
+    <!-- JS hooks: #contact-form, #form-message, #hours, #hours-output, #password, #message -->
+    <form id="contact-form" action="#" method="post">
+
+      <fieldset>
+        <legend>Your details</legend>
+        <p>
+          <label for="full-name">Full name *</label><br>
+          <input type="text" id="full-name" name="full_name" placeholder="Sara Ali" required>
+        </p>
+        <p>
+          <label for="email">Email *</label><br>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+        </p>
+        <p>
+          <label for="phone">Phone (11 digits)</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="01012345678" pattern="[0-9]{11}" title="Enter 11 digits">
+        </p>
+        <p>
+          <label for="age">Age (12 to 25)</label><br>
+          <input type="number" id="age" name="age" min="12" max="25">
+        </p>
+        <p>
+          <label for="birthday">Birthday</label><br>
+          <input type="date" id="birthday" name="birthday">
+        </p>
+        <p>
+          <label for="password">Password (at least 8 characters) *</label><br>
+          <input type="password" id="password" name="password" minlength="8" required>
+        </p>
+        <p>
+          <label for="city">City</label><br>
+          <input type="text" id="city" name="city" list="cities" placeholder="Start typing">
+          <datalist id="cities">
+            <option value="Cairo">
+            <option value="Alexandria">
+            <option value="Giza">
+            <option value="Ismailia">
+            <option value="Aswan">
+          </datalist>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your interests</legend>
+        <p>Your level:</p>
+        <p>
+          <input type="radio" id="level-beginner" name="level" value="beginner" checked>
+          <label for="level-beginner">Beginner</label>
+          <input type="radio" id="level-intermediate" name="level" value="intermediate">
+          <label for="level-intermediate">Intermediate</label>
+          <input type="radio" id="level-advanced" name="level" value="advanced">
+          <label for="level-advanced">Advanced</label>
+        </p>
+        <p>Topics you like:</p>
+        <p>
+          <input type="checkbox" id="topic-html" name="topics" value="html">
+          <label for="topic-html">HTML</label>
+          <input type="checkbox" id="topic-css" name="topics" value="css">
+          <label for="topic-css">CSS</label>
+          <input type="checkbox" id="topic-js" name="topics" value="javascript">
+          <label for="topic-js">JavaScript</label>
+          <input type="checkbox" id="topic-design" name="topics" value="design">
+          <label for="topic-design">Design</label>
+        </p>
+        <p>
+          <label for="day">Preferred day</label><br>
+          <select id="day" name="day">
+            <option value="">Choose a day</option>
+            <option value="sunday">Sunday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="thursday">Thursday</option>
+          </select>
+        </p>
+        <p>
+          <label for="hours">Hours per week: <output id="hours-output" for="hours">3</output></label><br>
+          <input type="range" id="hours" name="hours" min="1" max="10" value="3">
+        </p>
+        <p>
+          <label for="photo">Profile photo</label><br>
+          <input type="file" id="photo" name="photo" accept="image/*">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your message</legend>
+        <p>
+          <label for="message">Why do you want to join?</label><br>
+          <textarea id="message" name="message" rows="5" cols="40" maxlength="300" placeholder="Write two or three sentences"></textarea>
+        </p>
+        <p>
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">I agree to the club rules *</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit" id="submit-btn">Send</button>
+        <button type="reset" id="reset-btn">Clear form</button>
+      </p>
+      <p id="form-message" aria-live="polite"></p>
+    </form>
+
+    <aside id="contact-info">
+      <h2>Other ways to reach us</h2>
+      <ul>
+        <li>Email: <a href="mailto:club@example.com">club@example.com</a></li>
+        <li>Phone: <a href="tel:+201000000000">+20 100 000 0000</a></li>
+        <li>Visit: Computer Lab, Room 12</li>
+        <li><a href="schedule.html">See when we meet</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 Tech Club. A practice website for HTML, CSS and JavaScript.</p>
+    <p><a href="contact.html">Contact us</a> | <a href="#site-header">Back to top</a></p>
+    <address>
+      Tech Club, Computer Lab, Room 12<br>
+      <a href="mailto:club@example.com">club@example.com</a> |
+      <a href="tel:+201000000000">+20 100 000 0000</a>
+    </address>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

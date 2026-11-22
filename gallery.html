@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photos from Tech Club workshops and events.">
+  <title>Tech Club | Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <a href="index.html" id="logo-link"><img src="images/logo.png" alt="Tech Club logo" width="80" height="80"></a>
+    <div id="site-title">
+      <p id="site-name">Tech Club</p>
+      <p id="tagline">Learn. Build. Share.</p>
+    </div>
+    <nav id="main-nav" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Gallery</h1>
+    <p>Click any photo to open the full image.</p>
+
+    <!-- JS hooks: .filter-btn[data-filter], .gallery-item[data-category] -->
+    <p id="gallery-filters">
+      <button type="button" class="filter-btn" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="workshop">Workshops</button>
+      <button type="button" class="filter-btn" data-filter="event">Events</button>
+    </p>
+
+    <div id="gallery" class="gallery">
+      <figure class="gallery-item" data-category="workshop">
+        <a href="images/gallery-1.jpg"><img src="images/gallery-1.jpg" alt="Workshop day (placeholder photo)" width="300" height="200" loading="lazy"></a>
+        <figcaption>Workshop</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="event">
+        <a href="images/gallery-2.jpg"><img src="images/gallery-2.jpg" alt="Project day (placeholder photo)" width="300" height="200" loading="lazy"></a>
+        <figcaption>Project day</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="event">
+        <a href="images/gallery-3.jpg"><img src="images/gallery-3.jpg" alt="Coding night (placeholder photo)" width="300" height="200" loading="lazy"></a>
+        <figcaption>Coding night</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="workshop">
+        <a href="images/gallery-4.jpg"><img src="images/gallery-4.jpg" alt="Design lab (placeholder photo)" width="300" height="200" loading="lazy"></a>
+        <figcaption>Design lab</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="event">
+        <a href="images/gallery-5.jpg"><img src="images/gallery-5.jpg" alt="Presentation (placeholder photo)" width="300" height="200" loading="lazy"></a>
+        <figcaption>Presentation</figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="event">
+        <a href="images/gallery-6.jpg"><img src="images/gallery-6.jpg" alt="Team photo (placeholder photo)" width="300" height="200" loading="lazy"></a>
+        <figcaption>Team photo</figcaption>
+      </figure>
+    </div>
+
+    <p><a href="index.html">Back to home</a></p>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 Tech Club. A practice website for HTML, CSS and JavaScript.</p>
+    <p><a href="contact.html">Contact us</a> | <a href="#site-header">Back to top</a></p>
+    <address>
+      Tech Club, Computer Lab, Room 12<br>
+      <a href="mailto:club@example.com">club@example.com</a> |
+      <a href="tel:+201000000000">+20 100 000 0000</a>
+    </address>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

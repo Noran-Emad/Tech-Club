@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weekly timetable and member list of Tech Club.">
+  <title>Tech Club | Schedule</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <a href="index.html" id="logo-link"><img src="images/logo.png" alt="Tech Club logo" width="80" height="80"></a>
+    <div id="site-title">
+      <p id="site-name">Tech Club</p>
+      <p id="tagline">Learn. Build. Share.</p>
+    </div>
+    <nav id="main-nav" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html" aria-current="page">Schedule</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Schedule and Members</h1>
+
+    <section id="timetable">
+      <h2>Weekly timetable</h2>
+      <table id="schedule">
+        <caption>Tech Club weekly timetable</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Time</th>
+            <th scope="col">Activity</th>
+            <th scope="col">Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Sunday</th>
+            <td>2:00 - 4:00 pm</td>
+            <td>HTML and CSS workshop</td>
+            <td>Lab 1</td>
+          </tr>
+          <tr>
+            <th scope="row">Tuesday</th>
+            <td>2:00 - 4:00 pm</td>
+            <td>JavaScript practice</td>
+            <td>Lab 1</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">Thursday</th>
+            <td>2:00 - 3:00 pm</td>
+            <td>Project time</td>
+            <td>Lab 2</td>
+          </tr>
+          <tr>
+            <td>3:00 - 4:00 pm</td>
+            <td>Presentations</td>
+            <td>Lab 2</td>
+          </tr>
+          <tr>
+            <th scope="row">Friday</th>
+            <td colspan="3">No sessions</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">All sessions are free for club members.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="members">
+      <h2>Members</h2>
+      <!-- JS hooks: #search, #level-filter, #members-table tbody tr[data-level] -->
+      <form id="search-form" action="#" method="get" role="search">
+        <p>
+          <label for="search">Search members</label>
+          <input type="search" id="search" name="search" placeholder="Type a name">
+        </p>
+        <p>
+          <label for="level-filter">Level</label>
+          <select id="level-filter" name="level">
+            <option value="all">All levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </p>
+      </form>
+
+      <table id="members-table">
+        <caption>Club members</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Level</th>
+            <th scope="col">Joined</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr data-level="beginner">
+          <td>Sara Ali</td>
+          <td>President</td>
+          <td>Beginner</td>
+          <td>September 2026</td>
+        </tr>
+        <tr data-level="intermediate">
+          <td>Omar Hassan</td>
+          <td>Designer</td>
+          <td>Intermediate</td>
+          <td>September 2026</td>
+        </tr>
+        <tr data-level="advanced">
+          <td>Nour Adel</td>
+          <td>Developer</td>
+          <td>Advanced</td>
+          <td>October 2026</td>
+        </tr>
+        <tr data-level="beginner">
+          <td>Youssef Samir</td>
+          <td>Member</td>
+          <td>Beginner</td>
+          <td>October 2026</td>
+        </tr>
+        <tr data-level="intermediate">
+          <td>Mariam Khaled</td>
+          <td>Member</td>
+          <td>Intermediate</td>
+          <td>October 2026</td>
+        </tr>
+        <tr data-level="beginner">
+          <td>Hana Tarek</td>
+          <td>Member</td>
+          <td>Beginner</td>
+          <td>November 2026</td>
+        </tr>
+        <tr data-level="advanced">
+          <td>Ahmed Mostafa</td>
+          <td>Treasurer</td>
+          <td>Advanced</td>
+          <td>September 2026</td>
+        </tr>
+        <tr data-level="intermediate">
+          <td>Laila Fathy</td>
+          <td>Member</td>
+          <td>Intermediate</td>
+          <td>November 2026</td>
+        </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total members</td>
+            <td id="member-total">8</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 Tech Club. A practice website for HTML, CSS and JavaScript.</p>
+    <p><a href="contact.html">Contact us</a> | <a href="#site-header">Back to top</a></p>
+    <address>
+      Tech Club, Computer Lab, Room 12<br>
+      <a href="mailto:club@example.com">club@example.com</a> |
+      <a href="tel:+201000000000">+20 100 000 0000</a>
+    </address>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
